@@ -22,7 +22,7 @@ export async function getLaunchByFlightNumber( flightNumber ) {
         
     try {
         
-        const response = await fetch(`${URL}/launches/${$flightNumber}`);
+        const response = await fetch(`${URL}/launches/${flightNumber}`);
         const data = await response.json();
     
             return data;
